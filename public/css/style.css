@@ -1,0 +1,272 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: Arial;
+    font-size: 1.8rem;
+    background-color: #dfe6e9;
+    padding-top: 75px;
+}
+
+input{
+    outline: 0;
+}
+
+button{
+    background: none;
+    border: 0;
+    outline: 0;
+}
+
+.form{
+    width: 45%;
+    height: auto;
+    margin-top: 25vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form input[type="email"], .form input[type="password"]{
+    display: block;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    border: 1px solid rgba(0,0,0, .5);
+}
+
+.form input[type="submit"]{
+    display: block;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    background-color: #000;
+    color: #fff;
+    border: 0;
+    font-size: 2.5rem;
+}
+
+.error{
+    width: 45%;
+    margin: 15px auto;
+    padding: 25px;
+    background-color: #d63031;
+    color: #fff;
+    text-align: center;
+}
+
+#add-user{
+    width: 300px;
+}
+
+#add-user input{
+    width: 100%;
+    height: 50px;
+    display: block;
+    margin-top: 15px;
+    padding-left: 15px;
+}
+
+#add-user select{
+    width: 100%;
+    height: 50px;
+    display: block;
+    margin-top: 15px;
+    padding-left: 15px;
+}
+
+#users, #games, #teams{
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#users, #users th, #users td, #games, #games th, #games td, #teams, #teams th, #teams td{
+    border: 1px solid #000;
+}
+
+#games td img{
+    width: 100%;
+}
+
+#games td{
+    line-height: 25px;
+}
+
+#users tr:nth-child(even){background-color: rgba(0,0,0, .05);}
+
+#users th, #games th, #teams th{
+    height: 60px;
+    text-align: center;
+    padding: 0 15px;
+    background-color: #6c5ce7;
+    color: #fff;
+}
+
+#users td, #games td, #teams td{
+    height: 50px;
+    padding: 10px 15px;
+    word-break: break-all;
+}
+
+#users td{
+    vertical-align: middle;
+}
+
+#games td{
+    vertical-align: top;
+}
+
+#team-showcase{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 400px;
+    max-height: 300px;
+    height: auto;
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 9px;
+    overflow-y: scroll;
+    box-shadow: 0 5px 10px rgba(0,0,0, .5);
+}
+
+#nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    background-color: #6c5ce7;
+    color: #fff;
+    list-style-type: none;
+}
+
+#nav li{
+    display: inline-block;
+}
+
+#nav button{
+    padding: 15px 20px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.6rem;
+    border: 0;
+    outline: none;
+}
+
+.page{
+    display: none;
+}
+
+.page:nth-child(1){
+    display: block;
+}
+
+.popup-form{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .5);
+    overflow-y: scroll;
+}
+
+.page .form{
+    position: relative;
+    width: 60%;
+    height: auto;
+    margin: 100px auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.page .form input, .page .form textarea{
+    display: block;
+}
+
+.page .form h1{
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.page .form input{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    border: 1px solid rgba(0,0,0, .2);
+}
+
+.page .form textarea{
+    width: 100%;
+    min-height: 150px;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid rgba(0,0,0, .2);
+    resize: vertical;
+}
+
+.page .form label{
+    display: block;
+    padding-bottom: 15px;
+}
+
+.page .form .close{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background-color: #000;
+    font-size: 1.4rem;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.game{
+    width: 80%;
+    margin: 15px auto;
+    padding: 25px;
+    background-color: rgba(0,0,0, .2);
+    border-radius: 10px;
+}
+
+.game img{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.game p{
+    padding-top: 10px;
+}
+
+.game .actions{
+    margin-top: 10px;
+}
+
+.game button{
+    display: inline-block;
+    margin-right: 10px;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 1.6rem;
+    background-color: #000;
+}
